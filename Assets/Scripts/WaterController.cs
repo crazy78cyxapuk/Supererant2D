@@ -8,16 +8,18 @@ public class WaterController : MonoBehaviour
     private Vector3 dir;
     private Vector2 lastVelocity;
 
-    [SerializeField] private TrajectoryRenderer trajectoryRenderer;
+    private TrajectoryRenderer trajectoryRenderer;
 
     #region PushWater
 
-    Vector2 startPoint;
-    Vector2 endPoint;
-    Vector2 direction;
-    Vector2 force;
-    float distance;
-    float pushForce = 4f;
+    private Vector2 startPoint;
+    private Vector2 endPoint;
+    private Vector2 direction;
+    private Vector2 force;
+    private float distance;
+    private float pushForce = 4f;
+
+    private bool isPush = false;
 
     private Camera cam;
 
@@ -27,6 +29,8 @@ public class WaterController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         cam = Camera.main;
+
+        trajectoryRenderer = GameObject.FindGameObjectWithTag("TrajectoryRenderer").GetComponent<TrajectoryRenderer>();
     }
 
     private void Update()
@@ -44,29 +48,62 @@ public class WaterController : MonoBehaviour
         }
     }
 
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("ForceWater"))
+        {
+            trajectoryRenderer.Hide();
+            isPush = false;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("ForceWater"))
+        {
+            isPush = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("ForceWater"))
+        {
+            trajectoryRenderer.Hide();
+            isPush = false;
+        }
+    }
+
     private void OnMouseDrag()
     {
-        endPoint = cam.ScreenToWorldPoint(Input.mousePosition);
-        distance = Vector2.Distance(startPoint, endPoint);
-        direction = (startPoint - endPoint).normalized;
-        force = direction * distance * pushForce;
+        if (isPush == true)
+        {
+            endPoint = cam.ScreenToWorldPoint(Input.mousePosition);
+            distance = Vector2.Distance(startPoint, endPoint);
+            direction = (startPoint - endPoint).normalized;
+            force = direction * distance * pushForce;
 
-        trajectoryRenderer.UpdateDots(transform.position, force);
+            trajectoryRenderer.UpdateDots(transform.position, force);
+        }
     }
 
     private void OnMouseUp()
     {
-        rb.AddForce(force, ForceMode2D.Impulse);
+        if(isPush == true)
+        {
+            rb.AddForce(force, ForceMode2D.Impulse);
 
-        trajectoryRenderer.Hide();  
+            trajectoryRenderer.Hide();
+        }
     }
 
     private void OnMouseDown()
     {
-        startPoint = cam.ScreenToWorldPoint(Input.mousePosition);
+        if (isPush == true)
+        {
+            startPoint = cam.ScreenToWorldPoint(Input.mousePosition);
 
-        trajectoryRenderer.Show();
-
-
+            trajectoryRenderer.Show();
+        }
     }
 }

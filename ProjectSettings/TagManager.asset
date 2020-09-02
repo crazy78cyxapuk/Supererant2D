@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Fire
   - Ricochet
+  - TrajectoryRenderer
+  - ForceWater
   layers:
   - Default
   - TransparentFX
