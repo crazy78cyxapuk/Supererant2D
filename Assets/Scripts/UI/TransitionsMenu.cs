@@ -5,18 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class TransitionsMenu : MonoBehaviour
 {
-    public void TransitionMenu()
+    public void TransitionScene(string scene)
     {
-        SceneManager.LoadScene("Menu");
-    }
-
-    public void TransitionGame()
-    {
-        SceneManager.LoadScene("Game");
-    }
-
-    public void TransitionGame1()
-    {
-        SceneManager.LoadScene("Game1");
+        SceneManager.LoadScene(scene);
     }
 }

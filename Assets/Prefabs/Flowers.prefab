@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9048675360451151577}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.22000003, y: 10.17, z: 6.1952925}
+  m_LocalPosition: {x: -0.22000003, y: 10.17, z: -7.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -99,6 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxAngles: 40
   minAngles: -40
+  rotateSpeed: 2.5
 --- !u!61 &9048675360451151573
 BoxCollider2D:
   m_ObjectHideFlags: 0

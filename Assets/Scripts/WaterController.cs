@@ -36,6 +36,8 @@ public class WaterController : MonoBehaviour
     private void Update()
     {
         lastVelocity = rb.velocity;
+
+        Debug.Log(isPush);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -46,33 +48,40 @@ public class WaterController : MonoBehaviour
             var dir = Vector3.Reflect(lastVelocity.normalized, collision.contacts[0].normal);
             rb.velocity = dir * Mathf.Max(speed, 0f);
         }
-    }
 
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("ForceWater"))
-        {
-            trajectoryRenderer.Hide();
-            isPush = false;
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
         if (collision.gameObject.CompareTag("ForceWater"))
         {
             isPush = true;
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("ForceWater"))
         {
+            force = new Vector2(0, 0);
             trajectoryRenderer.Hide();
             isPush = false;
         }
     }
+
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag("ForceWater"))
+    //    {
+    //        isPush = true;
+    //    }
+    //}
+
+    //private void OnTriggerExit2D(Collider2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag("ForceWater"))
+    //    {
+    //        force = new Vector2(0, 0);
+    //        trajectoryRenderer.Hide();
+    //        isPush = false;
+    //    }
+    //}
 
     private void OnMouseDrag()
     {

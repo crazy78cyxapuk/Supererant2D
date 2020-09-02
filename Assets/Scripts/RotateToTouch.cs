@@ -8,6 +8,7 @@ public class RotateToTouch : MonoBehaviour
     private Vector3 lastPositionMouse;
 
     [SerializeField] private float maxAngles, minAngles;
+    [SerializeField] private float rotateSpeed;
 
     private void Update()
     {
@@ -35,7 +36,7 @@ public class RotateToTouch : MonoBehaviour
         {
             if (TranslateEulerToRotate(transform.localRotation.eulerAngles.z) < maxAngles)
             {
-                transform.Rotate(new Vector3(0, 0, 5), 10f, Space.World);
+                transform.Rotate(new Vector3(0, 0, 5), rotateSpeed, Space.World);
             }
         }
 
@@ -43,7 +44,7 @@ public class RotateToTouch : MonoBehaviour
         {
             if (TranslateEulerToRotate(transform.localRotation.eulerAngles.z) > minAngles)
             {
-                transform.Rotate(new Vector3(0, 0, -5), 10f, Space.World);
+                transform.Rotate(new Vector3(0, 0, -5), rotateSpeed, Space.World);
             }
         }
 

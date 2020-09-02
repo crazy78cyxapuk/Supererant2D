@@ -57,7 +57,7 @@ public class WaterSpawner : MonoBehaviour
             yield return new WaitForSeconds(0.2f);
         }
 
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(1.5f);
 
         spawnBtn.interactable = true;
     }
