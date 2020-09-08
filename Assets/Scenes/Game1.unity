@@ -150,6 +150,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771ffa7d25206504b91a7f242f0d3c67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MainScreen: {fileID: 0}
+  LevelsScreen: {fileID: 0}
+  LevelsChoiceScreen: {fileID: 0}
+  SettingsScreen: {fileID: 0}
+  AboutScreen: {fileID: 0}
 --- !u!4 &79866483
 Transform:
   m_ObjectHideFlags: 0

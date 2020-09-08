@@ -11,7 +11,7 @@ public class WaterSpawner : MonoBehaviour
 
     [SerializeField] private Button spawnBtn;
 
-    private int countWaters = 5;
+    private int countWaters;
 
     private ManagerPool managerPool = new ManagerPool();
     //private bool isSpawn = false;
@@ -44,6 +44,8 @@ public class WaterSpawner : MonoBehaviour
 
     public void Spawn()
     {
+        countWaters = Random.Range(5, 16);
+
         StartCoroutine(SpawnWaitForSec());
     }
 
@@ -54,6 +56,10 @@ public class WaterSpawner : MonoBehaviour
         for(int i=0; i < countWaters; i++)
         {
             objs.Add(managerPool.Spawn(PoolType.Entities, water, crane.transform.position));
+
+            float rand = Random.Range(150, 250) / 1000f;
+            objs[objs.Count - 1].transform.localScale = new Vector3(rand, rand, rand);
+
             yield return new WaitForSeconds(0.2f);
         }
 

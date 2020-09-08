@@ -36,8 +36,6 @@ public class WaterController : MonoBehaviour
     private void Update()
     {
         lastVelocity = rb.velocity;
-
-        Debug.Log(isPush);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
