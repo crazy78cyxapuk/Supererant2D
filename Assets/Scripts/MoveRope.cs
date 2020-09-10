@@ -25,7 +25,7 @@ public class MoveRope : MonoBehaviour
     {
         if (balls.Count > 0)
         {
-            Vector2 dir = new Vector2(0, strengthForce * balls.Count);
+            Vector2 dir = new Vector2(0, strengthForce / balls.Count);
 
             for(int i=0; i < allRope.Length; i++)
             {
