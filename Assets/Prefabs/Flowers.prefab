@@ -99,7 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxAngles: 40
   minAngles: -40
-  rotateSpeed: 1.5
+  rotateSpeed: 2
 --- !u!61 &9048675360451151573
 BoxCollider2D:
   m_ObjectHideFlags: 0

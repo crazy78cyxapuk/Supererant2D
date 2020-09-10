@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 public class WaterSpawner : MonoBehaviour
 {
@@ -11,36 +12,35 @@ public class WaterSpawner : MonoBehaviour
 
     [SerializeField] private Button spawnBtn;
 
+    [SerializeField] private Camera mainCamera;
+
     private int countWaters;
 
     private ManagerPool managerPool = new ManagerPool();
-    //private bool isSpawn = false;
+
+    private static WaterSpawner instance;
+    public static WaterSpawner Instance => instance;
+
+    private void Awake()
+    {
+        InitSingleton();
+    }
+
+    private void InitSingleton()
+    {
+        if (instance != null && instance != this) Destroy(gameObject);
+        else instance = this;
+    }
 
     private void Start()
     {
         managerPool.AddPool(PoolType.Entities);
     }
 
-    //private void Update()
-    //{
-    //    if (isSpawn == true)// && objs.Count < countWaters)
-    //    {
-    //        for (var i = 0; i < 1; i++)
-    //        {
-    //            objs.Add(managerPool.Spawn(PoolType.Entities, water, crane.transform.position));
-    //            spawnBtn.text = (countWaters - objs.Count).ToString();
-    //        }
-    //    }
-
-    //    if (Input.GetKeyDown(KeyCode.W))
-    //    {
-    //        for (var i = 0; i < objs.Count; i++)
-    //        {
-    //            managerPool.Despawn(PoolType.Entities, objs[i]);
-    //        }
-    //        objs.Clear();
-    //    }
-    //}
+    private void EnableCameraFollow()
+    {
+        mainCamera.GetComponent<CameraFollow>().enabled = true;
+    }
 
     public void Spawn()
     {
@@ -62,6 +62,7 @@ public class WaterSpawner : MonoBehaviour
 
             yield return new WaitForSeconds(0.2f);
         }
+        EnableCameraFollow();
 
         yield return new WaitForSeconds(1.5f);
 
