@@ -32,6 +32,8 @@ public class SliderController : MonoBehaviour
 
         cam = Camera.main;
         camPositionY = cam.transform.position.y;
+
+        slider.maxValue = 0.99f;
     }
 
     private void Update()
@@ -55,7 +57,7 @@ public class SliderController : MonoBehaviour
     {
         CameraFollow.Instance.stopPosition = true;
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3f);
         CameraFollow.Instance.stopPosition = false;
         cam.GetComponent<CameraFollow>().enabled = true;
     }
