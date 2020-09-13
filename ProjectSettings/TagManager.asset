@@ -8,6 +8,7 @@ TagManager:
   - Ricochet
   - TrajectoryRenderer
   - ForceWater
+  - BlueCanopy
   layers:
   - Default
   - TransparentFX

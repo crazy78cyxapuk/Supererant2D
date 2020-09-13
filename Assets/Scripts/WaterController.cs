@@ -63,23 +63,23 @@ public class WaterController : MonoBehaviour
         }
     }
 
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    if (collision.gameObject.CompareTag("ForceWater"))
-    //    {
-    //        isPush = true;
-    //    }
-    //}
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("BlueCanopy"))
+        {
+            isPush = true;
+        }
+    }
 
-    //private void OnTriggerExit2D(Collider2D collision)
-    //{
-    //    if (collision.gameObject.CompareTag("ForceWater"))
-    //    {
-    //        force = new Vector2(0, 0);
-    //        trajectoryRenderer.Hide();
-    //        isPush = false;
-    //    }
-    //}
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("BlueCanopy"))
+        {
+            force = new Vector2(0, 0);
+            trajectoryRenderer.Hide();
+            isPush = false;
+        }
+    }
 
     private void OnMouseDrag()
     {

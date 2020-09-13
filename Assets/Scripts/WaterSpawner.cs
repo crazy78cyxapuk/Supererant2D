@@ -60,6 +60,8 @@ public class WaterSpawner : MonoBehaviour
             float rand = Random.Range(150, 250) / 1000f;
             objs[objs.Count - 1].transform.localScale = new Vector3(rand, rand, rand);
 
+            objs[objs.Count - 1].GetComponent<Rigidbody2D>().velocity = new Vector2(Random.Range(-1, 2), Random.Range(-1, 2));
+
             yield return new WaitForSeconds(0.2f);
         }
         EnableCameraFollow();
