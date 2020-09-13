@@ -11,7 +11,12 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private Transform player;
     private int lastX;
 
+    [HideInInspector] public bool stopPosition = false;
+
     private float positionCameraX;
+
+    private static CameraFollow instance;
+    public static CameraFollow Instance => instance;
 
     public Transform GetLowestBall
     {
@@ -24,6 +29,17 @@ public class CameraFollow : MonoBehaviour
         set { }
     }
 
+    private void Awake()
+    {
+        InitSingleton();
+    }
+
+    private void InitSingleton()
+    {
+        if (instance != null && instance != this) Destroy(gameObject);
+        else instance = this;
+    }
+
     void Start()
     {
         positionCameraX = transform.position.x;
@@ -31,12 +47,11 @@ public class CameraFollow : MonoBehaviour
         player = GetLowestBall;
 
         offset = new Vector2(Mathf.Abs(offset.x), offset.y);
-        //FindPlayer(faceLeft);
     }
 
     void Update()
     {
-        if (transform.position.y > 1.5f)
+        if (transform.position.y > 1.5f && stopPosition == false)
         {
             if (player)
             {

@@ -13,6 +13,7 @@ public class WaterSpawner : MonoBehaviour
     [SerializeField] private Button spawnBtn;
 
     [SerializeField] private Camera mainCamera;
+    [SerializeField] private GameObject slider;
 
     private int countWaters;
 
@@ -42,6 +43,11 @@ public class WaterSpawner : MonoBehaviour
         mainCamera.GetComponent<CameraFollow>().enabled = true;
     }
 
+    private void EnableSlider()
+    {
+        slider.SetActive(true);
+    }
+
     public void Spawn()
     {
         countWaters = Random.Range(5, 16);
@@ -64,7 +70,9 @@ public class WaterSpawner : MonoBehaviour
 
             yield return new WaitForSeconds(0.2f);
         }
+
         EnableCameraFollow();
+        EnableSlider();
 
         yield return new WaitForSeconds(1.5f);
 
