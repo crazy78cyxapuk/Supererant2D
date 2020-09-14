@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class FireManager : MonoBehaviour
 {
-    [HideInInspector] public int countFires;
+    [SerializeField] private GameObject GameMain, Finish;
+
+    private int countFires;
 
     private static FireManager instance;
     public static FireManager Instance => instance;
@@ -24,17 +26,20 @@ public class FireManager : MonoBehaviour
     {
         GameObject[] obj = GameObject.FindGameObjectsWithTag("Fire");
         countFires = obj.Length;
-
-        Debug.Log(countFires);
     }
 
     public void MinusFire()
     {
-        countFires--;
-        Debug.Log(countFires);
-        if (countFires < 0)
+        countFires -= 1;
+        if (countFires == 0)
         {
-            //Time.timeScale = 0f;
+            EnableFinishScreen();
         }
+    }
+
+    private void EnableFinishScreen()
+    {
+        GameMain.SetActive(false);
+        Finish.SetActive(true);
     }
 }

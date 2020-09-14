@@ -45,7 +45,10 @@ public class WaterSpawner : MonoBehaviour
 
     private void EnableSlider()
     {
-        slider.SetActive(true);
+        if (mainCamera.transform.position.y != 1.5f)
+        {
+            slider.SetActive(true);
+        }
     }
 
     public void Spawn()

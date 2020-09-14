@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class TrumpetController : MonoBehaviour
 {
-    //private List<GameObject> balls = new List<GameObject>();
     [SerializeField] private Transform exit;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -29,6 +28,6 @@ public class TrumpetController : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         obj.SetActive(true);
-        obj.GetComponent<Rigidbody2D>().velocity = new Vector3(0, -10, 0);
+        obj.GetComponent<Rigidbody2D>().velocity = new Vector2(Random.Range(-1, 2), Random.Range(-10, 0));
     }
 }

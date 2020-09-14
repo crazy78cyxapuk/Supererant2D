@@ -10,8 +10,6 @@ public class FireController : MonoBehaviour
         {
             gameObject.SetActive(false);
 
-            Debug.Log(gameObject.name);
-
             FireManager.Instance.MinusFire();
         }
     }
