@@ -9,6 +9,10 @@ public class FireController : MonoBehaviour
         if(collision.tag == "Player")
         {
             gameObject.SetActive(false);
+
+            Debug.Log(gameObject.name);
+
+            FireManager.Instance.MinusFire();
         }
     }
 }
