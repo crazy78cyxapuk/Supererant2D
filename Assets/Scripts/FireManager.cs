@@ -6,7 +6,8 @@ public class FireManager : MonoBehaviour
 {
     [SerializeField] private GameObject GameMain, Finish;
 
-    private int countFires;
+    //private int countFires;
+    private List<GameObject> fires = new List<GameObject>();
 
     private static FireManager instance;
     public static FireManager Instance => instance;
@@ -25,13 +26,17 @@ public class FireManager : MonoBehaviour
     private void Start()
     {
         GameObject[] obj = GameObject.FindGameObjectsWithTag("Fire");
-        countFires = obj.Length;
+
+        for(int i=0; i<obj.Length; i++)
+        {
+            fires.Add(obj[i]);
+        }
     }
 
-    public void MinusFire()
+    public void MinusFire(GameObject obj)
     {
-        countFires -= 1;
-        if (countFires == 0)
+        fires.Remove(obj);
+        if(fires.Count == 0)
         {
             EnableFinishScreen();
         }
