@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class AutoRotate : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private float moveSpeed;
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        transform.Rotate(new Vector3(0, 0, Time.deltaTime * moveSpeed));
     }
 }

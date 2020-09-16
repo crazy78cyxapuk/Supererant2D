@@ -10,8 +10,6 @@ public class WaterSpawner : MonoBehaviour
     [SerializeField] private Transform crane;
     [HideInInspector] public List<GameObject> objs = new List<GameObject>();
 
-    [SerializeField] private Button spawnBtn;
-
     [SerializeField] private Camera mainCamera;
     [SerializeField] private GameObject slider;
 
@@ -36,6 +34,8 @@ public class WaterSpawner : MonoBehaviour
     private void Start()
     {
         managerPool.AddPool(PoolType.Entities);
+
+        Spawn();
     }
 
     private void EnableCameraFollow()
@@ -51,7 +51,7 @@ public class WaterSpawner : MonoBehaviour
         }
     }
 
-    public void Spawn()
+    private void Spawn()
     {
         countWaters = Random.Range(5, 16);
 
@@ -60,7 +60,7 @@ public class WaterSpawner : MonoBehaviour
 
     IEnumerator SpawnWaitForSec()
     {
-        spawnBtn.interactable = false;
+        yield return new WaitForSeconds(1.5f);
 
         for(int i=0; i < countWaters; i++)
         {
@@ -76,9 +76,5 @@ public class WaterSpawner : MonoBehaviour
 
         EnableCameraFollow();
         EnableSlider();
-
-        yield return new WaitForSeconds(1.5f);
-
-        spawnBtn.interactable = true;
     }
 }

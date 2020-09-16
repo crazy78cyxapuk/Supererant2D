@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class TransitionsMenu : MonoBehaviour
 {
-    [SerializeField] private GameObject MainScreen, LevelsScreen, LevelsChoiceScreen, SettingsScreen, AboutScreen;
+    [SerializeField] private GameObject TitleScreen, MainScreen, LevelsScreen, LevelsChoiceScreen, SettingsScreen, AboutScreen;
     private GameObject LastScreen;
 
     public void TransitionScene(string scene)
@@ -16,6 +16,12 @@ public class TransitionsMenu : MonoBehaviour
 
 
     #region Buttons in scene "Menu"
+
+    public void TitleToMenu()
+    {
+        MainScreen.SetActive(true);
+        TitleScreen.SetActive(false);
+    }
 
     public void MainToLevels()
     {
