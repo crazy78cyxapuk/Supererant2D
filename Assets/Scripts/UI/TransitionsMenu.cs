@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class TransitionsMenu : MonoBehaviour
 {
     [SerializeField] private GameObject TitleScreen, MainScreen, LevelsScreen, LevelsChoiceScreen, SettingsScreen, AboutScreen;
     private GameObject LastScreen;
+
+    [SerializeField] private GameObject settingsBtn;
+    [SerializeField] private GameObject AllSettingsScreen;
 
     public void TransitionScene(string scene)
     {
@@ -70,6 +74,30 @@ public class TransitionsMenu : MonoBehaviour
     {
         LevelsChoiceScreen.SetActive(true);
         LevelsScreen.SetActive(false);
+    }
+
+    #endregion
+
+    #region Buttons in game
+
+    public void ShowSettings()
+    {
+        settingsBtn.SetActive(false);
+        AllSettingsScreen.SetActive(true);
+    }
+
+    public void HideAllSettings()
+    {
+        Animator anim = AllSettingsScreen.GetComponent<Animator>();
+        anim.SetBool("isHide", true);
+        StartCoroutine(DisabledAllSettings());
+    }
+
+    IEnumerator DisabledAllSettings()
+    {
+        yield return new WaitForSeconds(1.6f);
+        AllSettingsScreen.SetActive(false);
+        settingsBtn.SetActive(true);
     }
 
     #endregion

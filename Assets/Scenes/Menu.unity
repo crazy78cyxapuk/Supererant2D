@@ -1145,10 +1145,10 @@ RectTransform:
   m_Father: {fileID: 1044294971}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0.000091552734, y: 709.9683}
-  m_SizeDelta: {x: 294, y: 522.52356}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 4.5999756, y: 801.57007}
+  m_SizeDelta: {x: -509.36554, y: 587.4031}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &367423991
 GameObject:
@@ -2606,7 +2606,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000030517578, y: 0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0.00012207031, y: 0.00024414062}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &604171710
@@ -5877,9 +5877,9 @@ RectTransform:
   m_Father: {fileID: 360565361}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -80.179, y: 488.55}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -80.179, y: -33.973633}
   m_SizeDelta: {x: 133.64313, y: 68.77246}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1111350479
@@ -6673,9 +6673,9 @@ RectTransform:
   m_Father: {fileID: 2000165484}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -244.21, y: 1648}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -244.21, y: -154}
   m_SizeDelta: {x: 414.92786, y: 213.521}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1287420229
@@ -9890,9 +9890,9 @@ RectTransform:
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 6.7572, y: 799.33}
-  m_SizeDelta: {x: 885.95386, y: 1801.0231}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 6.757202, y: -0.040039062}
+  m_SizeDelta: {x: 885.95386, y: 202.44397}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2007811783
 GameObject:
