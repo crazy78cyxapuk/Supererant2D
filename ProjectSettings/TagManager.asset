@@ -9,6 +9,7 @@ TagManager:
   - TrajectoryRenderer
   - ForceWater
   - BlueCanopy
+  - MusicBackground
   layers:
   - Default
   - TransparentFX

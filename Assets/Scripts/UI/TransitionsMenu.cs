@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class TransitionsMenu : MonoBehaviour
 {
-    [SerializeField] private GameObject TitleScreen, MainScreen, LevelsScreen, LevelsChoiceScreen, SettingsScreen, AboutScreen;
+    [SerializeField] private GameObject TitleScreen, MainScreen, LevelsScreen, LevelsChoiceScreenMidtown, LevelsChoiceScreenCity, LevelsChoiceScreenCountry, SettingsScreen, AboutScreen;
     private GameObject LastScreen;
 
     [SerializeField] private GameObject settingsBtn;
@@ -35,7 +35,7 @@ public class TransitionsMenu : MonoBehaviour
 
     public void LevelsToChoiceLevel()
     {
-        LevelsChoiceScreen.SetActive(true);
+        //LevelsChoiceScreen.SetActive(true);
         LevelsScreen.SetActive(false);
     }
 
@@ -64,15 +64,39 @@ public class TransitionsMenu : MonoBehaviour
         SettingsScreen.SetActive(false);
     }
 
-    public void HideChoiceLevelsScreen()
+    public void HideChoiceLevelsScreenMidtown()
     {
         LevelsScreen.SetActive(true);
-        LevelsChoiceScreen.SetActive(false);
+        LevelsChoiceScreenMidtown.SetActive(false);
     }
 
-    public void ShowChoiceLevelsScreen()
+    public void ShowChoiceLevelsMidtown()
     {
-        LevelsChoiceScreen.SetActive(true);
+        LevelsChoiceScreenMidtown.SetActive(true);
+        LevelsScreen.SetActive(false);
+    }
+
+    public void HideChoiceLevelsScreenCity()
+    {
+        LevelsScreen.SetActive(true);
+        LevelsChoiceScreenCity.SetActive(false);
+    }
+
+    public void ShowChoiceLevelsCity()
+    {
+        LevelsChoiceScreenCity.SetActive(true);
+        LevelsScreen.SetActive(false);
+    }
+
+    public void HideChoiceLevelsScreenCountry()
+    {
+        LevelsScreen.SetActive(true);
+        LevelsChoiceScreenCountry.SetActive(false);
+    }
+
+    public void ShowChoiceLevelsCountry()
+    {
+        LevelsChoiceScreenCountry.SetActive(true);
         LevelsScreen.SetActive(false);
     }
 
