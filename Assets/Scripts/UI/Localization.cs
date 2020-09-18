@@ -43,16 +43,19 @@ public class Localization : MonoBehaviour
         switch (PlayerPrefs.GetString("localization"))
         {
             case "en":
-                Debug.Log("en");
                 PlayerPrefs.SetString("localization", "ru");
                 InitTranslateRU();
                 break;
 
             case "ru":
-                Debug.Log("ru");
                 PlayerPrefs.SetString("localization", "en");
                 InitTranslateEN();
                 break;
+            case "":
+                PlayerPrefs.SetString("localization", "en");
+                InitTranslateEN();
+                break;
+
         }
 
         PlaySound();
