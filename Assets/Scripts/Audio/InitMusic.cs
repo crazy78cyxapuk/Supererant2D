@@ -27,10 +27,15 @@ public class InitMusic : MonoBehaviour
 
             musicObj.GetComponent<AudioSource>().volume = slider.value;
         }
-        else
-        {
-            //sound
-        }
+        //else
+        //{
+        //    if (soundObj == null)
+        //    {
+        //        soundObj = GameObject.FindGameObjectWithTag("Sound");
+        //    }
+
+        //    soundObj.GetComponent<AudioSource>().volume = slider.value;
+        //}
 
         PlayerPrefs.SetFloat(audio, slider.value);
     }

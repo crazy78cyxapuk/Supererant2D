@@ -10,6 +10,7 @@ TagManager:
   - ForceWater
   - BlueCanopy
   - MusicBackground
+  - Sound
   layers:
   - Default
   - TransparentFX
