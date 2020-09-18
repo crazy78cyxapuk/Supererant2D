@@ -44,7 +44,15 @@ public class FireManager : MonoBehaviour
 
     private void EnableFinishScreen()
     {
+        PlaySound();
+
         GameMain.SetActive(false);
         Finish.SetActive(true);
+    }
+
+    private void PlaySound()
+    {
+        GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("sound");
+        GetComponent<AudioSource>().Play();
     }
 }

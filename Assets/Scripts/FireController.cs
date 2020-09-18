@@ -8,9 +8,22 @@ public class FireController : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
-            gameObject.SetActive(false);
-
-            FireManager.Instance.MinusFire(gameObject);
+            StartCoroutine(HideFire());
         }
+    }
+
+    IEnumerator HideFire()
+    {
+        GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("sound");
+        GetComponent<AudioSource>().Play();
+
+        FireManager.Instance.MinusFire(gameObject);
+
+        gameObject.GetComponent<BoxCollider2D>().enabled = false;
+        gameObject.GetComponent<Animator>().enabled = false;
+        gameObject.GetComponent<SpriteRenderer>().sprite = null;
+
+        yield return new WaitForSeconds(0.6f);
+        gameObject.SetActive(false);
     }
 }

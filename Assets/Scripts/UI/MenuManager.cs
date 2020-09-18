@@ -11,7 +11,7 @@ public class MenuManager : MonoBehaviour
 
     private void Awake()
     {
-        if(PlayerPrefs.GetFloat("enterInGame") == 0)
+        if (PlayerPrefs.GetFloat("enterInGame") == 0)
         {
             PlayerPrefs.SetFloat("music", 1);
             PlayerPrefs.SetFloat("sound", 1);

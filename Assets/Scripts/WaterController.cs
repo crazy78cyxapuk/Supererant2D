@@ -25,6 +25,11 @@ public class WaterController : MonoBehaviour
 
     #endregion
 
+    private void Awake()
+    {
+        InitilizationSound();
+    }
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -112,5 +117,11 @@ public class WaterController : MonoBehaviour
 
             trajectoryRenderer.Show();
         }
+    }
+
+    private void InitilizationSound()
+    {
+        GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("sound");
+        GetComponent<AudioSource>().Play();
     }
 }

@@ -54,5 +54,13 @@ public class Localization : MonoBehaviour
                 InitTranslateEN();
                 break;
         }
+
+        PlaySound();
+    }
+
+    private void PlaySound()
+    {
+        GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("sound");
+        GetComponent<AudioSource>().Play();
     }
 }
