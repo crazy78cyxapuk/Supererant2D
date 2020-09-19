@@ -3452,7 +3452,7 @@ MonoBehaviour:
   AboutScreen: {fileID: 0}
   settingsBtn: {fileID: 3697564204401091857}
   AllSettingsScreen: {fileID: 3697564205426012676}
-  click: {fileID: 0}
+  click: {fileID: 8300000, guid: 558907c9447e1e242a1f2a8c4f229feb, type: 3}
 --- !u!114 &6202773497739597621
 MonoBehaviour:
   m_ObjectHideFlags: 0

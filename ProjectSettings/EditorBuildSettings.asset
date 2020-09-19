@@ -39,18 +39,24 @@ EditorBuildSettings:
     path: Assets/Scenes/Game9.unity
     guid: b83297e694172b14dae8821334e5ddf5
   - enabled: 1
-    path: Assets/Scenes/Game10.unity
+    path: Assets/Scenes/desert/d1.unity
     guid: 249430c263b0e884fb05c9d0dcc54d80
   - enabled: 1
     path: Assets/Scenes/Game11.unity
     guid: f7e5b44a17aa36d4b887b3bf1bea2651
-  - enabled: 1
-    path: Assets/Scenes/Game12.unity
-    guid: 26b42609bd415084bb0c798e99415a43
   - enabled: 1
     path: Assets/Scenes/Game13.unity
     guid: a2f7a04b2d1e5874a90535de6333363b
   - enabled: 1
     path: Assets/Scenes/Game14.unity
     guid: acb45e3ca7e660b49a3d262a799718fb
+  - enabled: 1
+    path: Assets/Scenes/forest/f1.unity
+    guid: 26b42609bd415084bb0c798e99415a43
+  - enabled: 1
+    path: Assets/Scenes/forest/f2.unity
+    guid: 775b5c58770d6464bbf8c216b56c117f
+  - enabled: 1
+    path: Assets/Scenes/forest/f3.unity
+    guid: 50dda5c0c90e0b548877a4e18cc4c2a2
   m_configObjects: {}
