@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class FireManager : MonoBehaviour
 {
+    [SerializeField] private string nameBiome;
+
     [SerializeField] private GameObject GameMain, Finish;
 
     //private int countFires;
@@ -54,5 +56,10 @@ public class FireManager : MonoBehaviour
     {
         GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("sound");
         GetComponent<AudioSource>().Play();
+    }
+
+    private void SaveLvl()
+    {
+        PlayerPrefs.SetInt(nameBiome, PlayerPrefs.GetInt(nameBiome) + 1);
     }
 }

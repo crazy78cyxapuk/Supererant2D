@@ -7,7 +7,9 @@ using UnityEngine.UI;
 public class TransitionsMenu : MonoBehaviour
 {
     [Header("Screen Menu")]
-    [SerializeField] private GameObject TitleScreen, MainScreen, LevelsScreen, LevelsChoiceScreenMidtown, LevelsChoiceScreenCity, LevelsChoiceScreenCountry, SettingsScreen, AboutScreen;
+    [SerializeField] private GameObject TitleScreen, MainScreen, LevelsScreen, LevelsChoiceScreenMidtown,
+                                        LevelsChoiceScreenUrban, LevelsChoiceScreenSuburban,
+                                        LevelsChoiceScreenForest, LevelsChoiceScreenVillage, LevelsChoiceScreenDesert, SettingsScreen, AboutScreen;
     private GameObject LastScreen;
 
     [Header("Screens Game")]
@@ -23,6 +25,7 @@ public class TransitionsMenu : MonoBehaviour
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
+        Debug.Log(PlayerPrefs.GetInt("1312312"));
     }
 
     public void TransitionScene(string scene)
@@ -112,35 +115,83 @@ public class TransitionsMenu : MonoBehaviour
         LevelsScreen.SetActive(false);
     }
 
-    public void HideChoiceLevelsScreenCity()
+    public void HideChoiceLevelsScreenUrban()
     {
         PlaySound(click);
 
         LevelsScreen.SetActive(true);
-        LevelsChoiceScreenCity.SetActive(false);
+        LevelsChoiceScreenUrban.SetActive(false);
     }
 
-    public void ShowChoiceLevelsCity()
+    public void ShowChoiceLevelsUrban()
     {
         PlaySound(click);
 
-        LevelsChoiceScreenCity.SetActive(true);
+        LevelsChoiceScreenUrban.SetActive(true);
         LevelsScreen.SetActive(false);
     }
 
-    public void HideChoiceLevelsScreenCountry()
+    public void HideChoiceLevelsScreenSuburban()
     {
         PlaySound(click);
 
         LevelsScreen.SetActive(true);
-        LevelsChoiceScreenCountry.SetActive(false);
+        LevelsChoiceScreenSuburban.SetActive(false);
     }
 
-    public void ShowChoiceLevelsCountry()
+    public void ShowChoiceLevelsSuburban()
     {
         PlaySound(click);
 
-        LevelsChoiceScreenCountry.SetActive(true);
+        LevelsChoiceScreenSuburban.SetActive(true);
+        LevelsScreen.SetActive(false);
+    }
+
+    public void HideChoiceLevelsScreenForest()
+    {
+        PlaySound(click);
+
+        LevelsScreen.SetActive(true);
+        LevelsChoiceScreenForest.SetActive(false);
+    }
+
+    public void ShowChoiceLevelsForest()
+    {
+        PlaySound(click);
+
+        LevelsChoiceScreenForest.SetActive(true);
+        LevelsScreen.SetActive(false);
+    }
+
+    public void HideChoiceLevelsScreenVillage()
+    {
+        PlaySound(click);
+
+        LevelsScreen.SetActive(true);
+        LevelsChoiceScreenVillage.SetActive(false);
+    }
+
+    public void ShowChoiceLevelsVillage()
+    {
+        PlaySound(click);
+
+        LevelsChoiceScreenVillage.SetActive(true);
+        LevelsScreen.SetActive(false);
+    }
+
+    public void HideChoiceLevelsScreenDesert()
+    {
+        PlaySound(click);
+
+        LevelsScreen.SetActive(true);
+        LevelsChoiceScreenDesert.SetActive(false);
+    }
+
+    public void ShowChoiceLevelsDesert()
+    {
+        PlaySound(click);
+
+        LevelsChoiceScreenDesert.SetActive(true);
         LevelsScreen.SetActive(false);
     }
 
