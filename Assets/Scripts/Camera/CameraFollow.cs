@@ -11,6 +11,8 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private Transform player;
     private int lastX;
 
+    [SerializeField] public float minPositionY = 1.5f;
+
     [HideInInspector] public bool stopPosition = false;
 
     private float positionCameraX;
@@ -51,7 +53,7 @@ public class CameraFollow : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.y > 1.5f && stopPosition == false)
+        if (transform.position.y > minPositionY && stopPosition == false)
         {
             if (player)
             {

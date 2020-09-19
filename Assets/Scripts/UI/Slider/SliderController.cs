@@ -40,11 +40,11 @@ public class SliderController : MonoBehaviour
     {
         if(clickHandle == false)
         {
-            slider.value = (camPositionY - cam.transform.position.y) / (camPositionY - 1.5f);
+            slider.value = (camPositionY - cam.transform.position.y) / (camPositionY - CameraFollow.Instance.minPositionY);
         }
         else
         {
-            cam.transform.position = new Vector3(cam.transform.position.x, camPositionY - slider.value * (camPositionY - 1.5f), cam.transform.position.z);
+            cam.transform.position = new Vector3(cam.transform.position.x, camPositionY - slider.value * (camPositionY - CameraFollow.Instance.minPositionY), cam.transform.position.z);
         }
     }
 
