@@ -48,6 +48,7 @@ public class FireManager : MonoBehaviour
     {
         PlaySound();
 
+        SaveLvl();
         GameMain.SetActive(false);
         Finish.SetActive(true);
     }

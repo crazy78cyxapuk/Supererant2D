@@ -3015,6 +3015,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b08052353b90db468ade56f816364fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameBiome: midtown
   GameMain: {fileID: 188129794}
   Finish: {fileID: 188129792}
 --- !u!82 &1214108692

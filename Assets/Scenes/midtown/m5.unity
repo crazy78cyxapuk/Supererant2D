@@ -350,17 +350,17 @@ PrefabInstance:
     - target: {fileID: 3697564203775132116, guid: 78dc35c224b779340b5711274b0b371c,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: m4
+      value: m5
       objectReference: {fileID: 0}
     - target: {fileID: 3697564203798157821, guid: 78dc35c224b779340b5711274b0b371c,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: m4
+      value: m5
       objectReference: {fileID: 0}
     - target: {fileID: 3697564204200789985, guid: 78dc35c224b779340b5711274b0b371c,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: m5
+      value: f1
       objectReference: {fileID: 0}
     - target: {fileID: 3697564204287379623, guid: 78dc35c224b779340b5711274b0b371c,
         type: 3}
@@ -375,7 +375,7 @@ PrefabInstance:
     - target: {fileID: 3697564204824172377, guid: 78dc35c224b779340b5711274b0b371c,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3697564204824172379, guid: 78dc35c224b779340b5711274b0b371c,
         type: 3}
@@ -1697,7 +1697,7 @@ PrefabInstance:
     - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.67
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
         type: 3}
@@ -1916,7 +1916,7 @@ PrefabInstance:
     - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.67
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
         type: 3}
@@ -2215,7 +2215,7 @@ PrefabInstance:
     - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.67
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
         type: 3}
@@ -2434,7 +2434,7 @@ PrefabInstance:
     - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.67
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
         type: 3}
@@ -2933,6 +2933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b08052353b90db468ade56f816364fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameBiome: midtown
   GameMain: {fileID: 188129794}
   Finish: {fileID: 188129792}
 --- !u!82 &1214108692
@@ -3532,7 +3533,7 @@ PrefabInstance:
     - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.67
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
         type: 3}
@@ -4659,7 +4660,7 @@ SpriteRenderer:
   m_Size: {x: 3.5900002, y: 21.624472}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &2101520187

@@ -362,6 +362,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: m5
       objectReference: {fileID: 0}
+    - target: {fileID: 3697564204200789985, guid: 78dc35c224b779340b5711274b0b371c,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3697564204287379623, guid: 78dc35c224b779340b5711274b0b371c,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
@@ -462,6 +467,24 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 188129791}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &188129795 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3697564204200789999, guid: 78dc35c224b779340b5711274b0b371c,
+    type: 3}
+  m_PrefabInstance: {fileID: 188129791}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &188129796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188129795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d25895c04156c4cb88bea935d4cbe7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &195794518
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1696,11 +1719,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
         type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10.67
-      objectReference: {fileID: 0}
-    - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
-        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -1912,11 +1930,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 17.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10.67
       objectReference: {fileID: 0}
     - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
         type: 3}
@@ -2214,11 +2227,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
         type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10.67
-      objectReference: {fileID: 0}
-    - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
-        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -2430,11 +2438,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 3.49
-      objectReference: {fileID: 0}
-    - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10.67
       objectReference: {fileID: 0}
     - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
         type: 3}
@@ -2933,6 +2936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b08052353b90db468ade56f816364fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameBiome: midtown
   GameMain: {fileID: 188129794}
   Finish: {fileID: 188129792}
 --- !u!82 &1214108692
@@ -3518,21 +3522,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ForceCanopyYellow (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5.59
-      objectReference: {fileID: 0}
-    - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 26.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10.67
       objectReference: {fileID: 0}
     - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
         type: 3}

@@ -671,7 +671,7 @@ PrefabInstance:
     - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.67
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
         type: 3}
@@ -1753,7 +1753,7 @@ PrefabInstance:
     - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.5
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
         type: 3}
@@ -1878,7 +1878,7 @@ PrefabInstance:
     - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.5
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
         type: 3}
@@ -2166,7 +2166,7 @@ PrefabInstance:
     - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.67
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
         type: 3}
@@ -2454,7 +2454,7 @@ PrefabInstance:
     - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.67
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 4803484508559843167, guid: 937894e78853ed9419c434813312b7ce,
         type: 3}
@@ -3103,6 +3103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b08052353b90db468ade56f816364fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameBiome: midtown
   GameMain: {fileID: 188129794}
   Finish: {fileID: 188129792}
 --- !u!82 &1214108692

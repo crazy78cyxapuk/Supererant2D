@@ -9,47 +9,86 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: fb4004a6b2d89b540b7a2b0a189936bb
   - enabled: 1
-    path: Assets/Scenes/Game.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
     path: Assets/Scenes/Game1.unity
     guid: 95294feee622c9a43a63fe94ba03c83a
-  - enabled: 1
-    path: Assets/Scenes/Game2.unity
-    guid: 6ccc4210404a31a4d87ae508bf51f5ce
-  - enabled: 1
-    path: Assets/Scenes/Game3.unity
-    guid: 47abefe2313d1454b93b5d96e9075aab
-  - enabled: 1
-    path: Assets/Scenes/Game4.unity
-    guid: e24767eddb8fcd246ab9308742889f38
-  - enabled: 1
-    path: Assets/Scenes/Game5.unity
-    guid: 6743005b85ffa4a4b99a95b72fed1cd2
-  - enabled: 1
-    path: Assets/Scenes/Game6.unity
-    guid: 59a73038082693f4d84e55ad70df4b1d
-  - enabled: 1
-    path: Assets/Scenes/Game7.unity
-    guid: d4f2d70872acb504ba25e5922d218714
-  - enabled: 1
-    path: Assets/Scenes/Game8.unity
-    guid: d81a487b74a73ac448347627f7db8372
-  - enabled: 1
-    path: Assets/Scenes/Game9.unity
-    guid: b83297e694172b14dae8821334e5ddf5
   - enabled: 1
     path: Assets/Scenes/desert/d1.unity
     guid: 249430c263b0e884fb05c9d0dcc54d80
   - enabled: 1
-    path: Assets/Scenes/Game11.unity
-    guid: f7e5b44a17aa36d4b887b3bf1bea2651
+    path: Assets/Scenes/desert/d2.unity
+    guid: edf683514afe7f4408066e7651830ff5
   - enabled: 1
-    path: Assets/Scenes/Game13.unity
-    guid: a2f7a04b2d1e5874a90535de6333363b
+    path: Assets/Scenes/desert/d3.unity
+    guid: 8475e198273f76844a680d9c97c93f9b
   - enabled: 1
-    path: Assets/Scenes/Game14.unity
-    guid: acb45e3ca7e660b49a3d262a799718fb
+    path: Assets/Scenes/desert/d4.unity
+    guid: 4f8fd038914607940820ecd1199fff32
+  - enabled: 1
+    path: Assets/Scenes/desert/d5.unity
+    guid: cca31d312677f844fb384874dda08c1c
+  - enabled: 1
+    path: Assets/Scenes/desert/d6.unity
+    guid: 3a08e848e6a0d914ebb4c2acaffab57e
+  - enabled: 1
+    path: Assets/Scenes/desert/d7.unity
+    guid: 4a828efe7c3774b40a0078e525352720
+  - enabled: 1
+    path: Assets/Scenes/desert/d8.unity
+    guid: e40a4b90270af02478d13994d4084b82
+  - enabled: 1
+    path: Assets/Scenes/desert/d9.unity
+    guid: 0293a435021a4fc44a377d0be5c9134b
+  - enabled: 1
+    path: Assets/Scenes/desert/d10.unity
+    guid: d5902b6cfdb60c94a982bf817d78a4fb
+  - enabled: 1
+    path: Assets/Scenes/midtown/m1.unity
+    guid: 42e1b95b43e8f0e4d83c575457443401
+  - enabled: 1
+    path: Assets/Scenes/midtown/m2.unity
+    guid: ff032df2bc865bb46992017f698e0306
+  - enabled: 1
+    path: Assets/Scenes/midtown/m3.unity
+    guid: a19823f0aab936443aee3207037b9794
+  - enabled: 1
+    path: Assets/Scenes/midtown/m4.unity
+    guid: 31a7da42bddd711488b3cb54ec9418a1
+  - enabled: 1
+    path: Assets/Scenes/midtown/m5.unity
+    guid: c7ab3d9c9213bcf41a0ee064d5c9cccf
+  - enabled: 1
+    path: Assets/Scenes/suburban/s1.unity
+    guid: 41699cb6b2462b1429975fd1ada2d734
+  - enabled: 1
+    path: Assets/Scenes/suburban/s2.unity
+    guid: 7ca4e2e6d09783840bc82e9795bd9660
+  - enabled: 1
+    path: Assets/Scenes/suburban/s3.unity
+    guid: 0b97f15e35ba9284cb304a9115e64a89
+  - enabled: 1
+    path: Assets/Scenes/suburban/s4.unity
+    guid: 5fd652b9ce386724ca5dde0509155974
+  - enabled: 1
+    path: Assets/Scenes/suburban/s5.unity
+    guid: 9b31aba67cf8418498eb087c740493b1
+  - enabled: 1
+    path: Assets/Scenes/suburban/s6.unity
+    guid: 35408a004a940a342b6d635cad8a5f3d
+  - enabled: 1
+    path: Assets/Scenes/suburban/s7.unity
+    guid: f39b9156eaf2ba8469fcd8924a412dbd
+  - enabled: 1
+    path: Assets/Scenes/suburban/s8.unity
+    guid: fadf8799891d6f3479d249645e87c177
+  - enabled: 1
+    path: Assets/Scenes/suburban/s9.unity
+    guid: 94997aa9951b2d64ea9e8296da013d9e
+  - enabled: 1
+    path: Assets/Scenes/suburban/s10.unity
+    guid: ca9480886a4f03c42a8b5aae0d217d4e
+  - enabled: 1
+    path: Assets/Scenes/suburban/s11.unity
+    guid: 2719d120e68454c439e62862c91ff832
   - enabled: 1
     path: Assets/Scenes/forest/f1.unity
     guid: 26b42609bd415084bb0c798e99415a43
@@ -59,4 +98,73 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/forest/f3.unity
     guid: 50dda5c0c90e0b548877a4e18cc4c2a2
+  - enabled: 1
+    path: Assets/Scenes/forest/f4.unity
+    guid: ad5e328518a9eb34ca4a09fda4db971e
+  - enabled: 1
+    path: Assets/Scenes/forest/f5.unity
+    guid: 0ab9c5804c6fa8c498b2545c84fb7c6e
+  - enabled: 1
+    path: Assets/Scenes/forest/f6.unity
+    guid: bd2ed5d03a969134aab685101a4891fa
+  - enabled: 1
+    path: Assets/Scenes/forest/f7.unity
+    guid: e7ec2707939f60a429e6d2d10b6ff41d
+  - enabled: 1
+    path: Assets/Scenes/forest/f8.unity
+    guid: a38c5167b8cc6b7499ca306c50592483
+  - enabled: 1
+    path: Assets/Scenes/forest/f9.unity
+    guid: f465b2e56f09ed844ac1aba6b02727e2
+  - enabled: 1
+    path: Assets/Scenes/forest/f10.unity
+    guid: e1cf79e744401fb40b7feb423e614c3e
+  - enabled: 1
+    path: Assets/Scenes/forest/f11.unity
+    guid: edeb193e85e467d4ea40ced4cca28c42
+  - enabled: 1
+    path: Assets/Scenes/village/v1.unity
+    guid: a53a41c50433659479a73c501c19ef43
+  - enabled: 1
+    path: Assets/Scenes/village/v2.unity
+    guid: 90b3701bdb75e904998a6b6e8f565499
+  - enabled: 1
+    path: Assets/Scenes/village/v3.unity
+    guid: 21b3d818087aa3a49b0655029d3773de
+  - enabled: 1
+    path: Assets/Scenes/village/v4.unity
+    guid: 3acb19a2a2213aa418cfe890dd3e9d7e
+  - enabled: 1
+    path: Assets/Scenes/village/v5.unity
+    guid: ac05aaa1180d9754b9612dc8d5c07425
+  - enabled: 1
+    path: Assets/Scenes/village/v6.unity
+    guid: 82cd76c6e2c364a4d81af28278008ec7
+  - enabled: 1
+    path: Assets/Scenes/village/v7.unity
+    guid: 36f084bb2d90378448e34c1e5c52fd3b
+  - enabled: 1
+    path: Assets/Scenes/village/v8.unity
+    guid: 53a56e24d3e666044825ce6010e84e1e
+  - enabled: 1
+    path: Assets/Scenes/village/v9.unity
+    guid: ba42d556e5473f647bbc4c7d2cbaf0fb
+  - enabled: 1
+    path: Assets/Scenes/village/v10.unity
+    guid: 1e75d6a7f1cda064bb387ff2f02ba510
+  - enabled: 1
+    path: Assets/Scenes/urban/u1.unity
+    guid: eaf2fc876748f8d46970eff4742ea2b2
+  - enabled: 1
+    path: Assets/Scenes/urban/u2.unity
+    guid: deafa5ed8915f854e87e2a890cbb81b4
+  - enabled: 1
+    path: Assets/Scenes/urban/u3.unity
+    guid: 663690d0d6bad5f44b65262bc3390663
+  - enabled: 1
+    path: Assets/Scenes/urban/u4.unity
+    guid: 692931d818160d845b4fc4e63420b621
+  - enabled: 1
+    path: Assets/Scenes/urban/u5.unity
+    guid: 1c64763a18acfe9419ea76639a532368
   m_configObjects: {}

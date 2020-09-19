@@ -724,6 +724,7 @@ MonoBehaviour:
   offset: {x: 0, y: 1}
   faceLeft: 1
   player: {fileID: 0}
+  minPositionY: 1.5
   stopPosition: 0
 --- !u!1001 &560459608
 PrefabInstance:
@@ -1345,6 +1346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b08052353b90db468ade56f816364fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameBiome: village
   GameMain: {fileID: 318637976}
   Finish: {fileID: 318637974}
 --- !u!82 &1214108692
