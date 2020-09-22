@@ -272,6 +272,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1915163462772884598, guid: 78dc35c224b779340b5711274b0b371c,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915163462772884598, guid: 78dc35c224b779340b5711274b0b371c,
+        type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915163462772884598, guid: 78dc35c224b779340b5711274b0b371c,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3697564203775132116, guid: 78dc35c224b779340b5711274b0b371c,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
@@ -281,6 +296,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: d2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3697564203974867310, guid: 78dc35c224b779340b5711274b0b371c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -242.36002
       objectReference: {fileID: 0}
     - target: {fileID: 3697564204200789985, guid: 78dc35c224b779340b5711274b0b371c,
         type: 3}
@@ -362,6 +382,26 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 6202773497739597621, guid: 78dc35c224b779340b5711274b0b371c,
+        type: 3}
+      propertyPath: translateEN.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202773497739597621, guid: 78dc35c224b779340b5711274b0b371c,
+        type: 3}
+      propertyPath: translateRU.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202773497739597621, guid: 78dc35c224b779340b5711274b0b371c,
+        type: 3}
+      propertyPath: translateEN.Array.data[5]
+      value: desert 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202773497739597621, guid: 78dc35c224b779340b5711274b0b371c,
+        type: 3}
+      propertyPath: translateRU.Array.data[5]
+      value: "\u043F\u0443\u0441\u0442\u044B\u043D\u043D\u044B\u0439 2"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78dc35c224b779340b5711274b0b371c, type: 3}
 --- !u!1 &214700154 stripped

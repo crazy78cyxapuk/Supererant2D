@@ -1227,6 +1227,16 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6202773497739597621, guid: 78dc35c224b779340b5711274b0b371c,
+        type: 3}
+      propertyPath: translateEN.Array.data[5]
+      value: urban 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202773497739597621, guid: 78dc35c224b779340b5711274b0b371c,
+        type: 3}
+      propertyPath: translateRU.Array.data[5]
+      value: "\u0433\u043E\u0440\u043E\u0434\u0441\u043A\u043E\u0439 5"
+      objectReference: {fileID: 0}
     - target: {fileID: 6317693942397088001, guid: 78dc35c224b779340b5711274b0b371c,
         type: 3}
       propertyPath: m_textInfo.characterCount
