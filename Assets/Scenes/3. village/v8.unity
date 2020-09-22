@@ -1432,6 +1432,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameBiome: village
   nameLvl: v8
+  nameNextLvl: v9
   GameMain: {fileID: 318637976}
   Finish: {fileID: 318637974}
 --- !u!82 &1214108692

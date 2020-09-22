@@ -6,6 +6,7 @@ public class FireManager : MonoBehaviour
 {
     [SerializeField] private string nameBiome;
     [SerializeField] public string nameLvl;
+    [SerializeField] private string nameNextLvl;
 
     [SerializeField] private GameObject GameMain, Finish;
 
@@ -51,7 +52,15 @@ public class FireManager : MonoBehaviour
 
         SaveLvl();
         GameMain.SetActive(false);
-        Finish.SetActive(true);
+
+        if(PlayerPrefs.GetString("transitions") == "auto")
+        {
+            TransitionsMenu.Instance.TransitionScene(nameNextLvl);
+        }
+        else
+        {
+            Finish.SetActive(true);
+        }
     }
 
     private void PlaySound()

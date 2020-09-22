@@ -3012,6 +3012,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameBiome: midtown
   nameLvl: m1
+  nameNextLvl: m2
   GameMain: {fileID: 188129794}
   Finish: {fileID: 188129792}
 --- !u!82 &1214108692

@@ -11,12 +11,14 @@ public class MenuManager : MonoBehaviour
 
     private void Awake()
     {
-        if (PlayerPrefs.GetFloat("enterInGame") == 0)
+        PlayerPrefs.SetFloat("enterInGame", 0);
+        if (PlayerPrefs.GetFloat("enterInGame") != 10)
         {
             PlayerPrefs.SetFloat("music", 1); //музыка
             PlayerPrefs.SetFloat("sound", 1); //звуки
             PlayerPrefs.SetString("localization", "en"); //локализация
             PlayerPrefs.SetString("camera", "slider"); //камера в игре //slider/auto
+            PlayerPrefs.SetString("transitions", "auto"); //переходы между уровнями //auto/manually
             PlayerPrefs.SetFloat("enterInGame", 10); //обозначаем, что игрок уже заходил в игру
         }
 

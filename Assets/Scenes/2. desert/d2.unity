@@ -1419,6 +1419,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameBiome: desert
   nameLvl: d2
+  nameNextLvl: d3
   GameMain: {fileID: 214700156}
   Finish: {fileID: 214700154}
 --- !u!82 &1214108692
