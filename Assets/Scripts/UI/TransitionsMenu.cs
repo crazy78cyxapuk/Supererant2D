@@ -25,7 +25,6 @@ public class TransitionsMenu : MonoBehaviour
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
-        Debug.Log(PlayerPrefs.GetInt("1312312"));
     }
 
     public void TransitionScene(string scene)
