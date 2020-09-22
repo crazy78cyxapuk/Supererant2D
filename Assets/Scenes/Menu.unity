@@ -9988,6 +9988,8 @@ MonoBehaviour:
   settingsBtn: {fileID: 0}
   AllSettingsScreen: {fileID: 0}
   click: {fileID: 8300000, guid: 558907c9447e1e242a1f2a8c4f229feb, type: 3}
+  loadImg: {fileID: 0}
+  isSceneLvl: 0
 --- !u!114 &784658281
 MonoBehaviour:
   m_ObjectHideFlags: 0

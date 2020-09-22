@@ -564,6 +564,7 @@ MonoBehaviour:
   offset: {x: 2, y: 1}
   faceLeft: 0
   player: {fileID: 0}
+  minPositionY: 1.5
   stopPosition: 0
 --- !u!1001 &633243196
 PrefabInstance:
@@ -1639,6 +1640,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b08052353b90db468ade56f816364fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameBiome: 
+  nameLvl: 
   GameMain: {fileID: 0}
   Finish: {fileID: 0}
 --- !u!82 &1214108692
@@ -3033,6 +3036,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 947538372156160835, guid: 78dc35c224b779340b5711274b0b371c,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
     - target: {fileID: 3697564204824172377, guid: 78dc35c224b779340b5711274b0b371c,
         type: 3}
       propertyPath: m_Name

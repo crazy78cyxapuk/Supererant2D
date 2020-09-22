@@ -20,17 +20,57 @@ public class TransitionsMenu : MonoBehaviour
     private AudioSource audioSource;
     [Header("Audio")]
     [SerializeField] private AudioClip click;
-    //[SerializeField] private AudioClip setting;
+
+    [SerializeField] public Image loadImg;
+    private Animator animatorImg;
+
+    public GameObject SceneLoadForLoadImage;
+
+    public AsyncOperation loadingSceneOperation;
+
+    [SerializeField] private bool isSceneLvl = false;
+
+
+    private static TransitionsMenu instance;
+    public static TransitionsMenu Instance => instance;
+
+    private void InitSingleton()
+    {
+        if (instance != null && instance != this) Destroy(gameObject);
+        else instance = this;
+    }
 
     private void Awake()
     {
+        InitSingleton();
         audioSource = GetComponent<AudioSource>();
+    }
+
+    private void Start()
+    {
+        if (isSceneLvl)
+        {
+            animatorImg = loadImg.GetComponent<Animator>();
+            animatorImg.SetTrigger("isStartScene");
+        }
     }
 
     public void TransitionScene(string scene)
     {
         PlaySound(click);
-        SceneManager.LoadScene(scene);
+
+        if (isSceneLvl)
+        {
+            SceneLoadForLoadImage.SetActive(true);
+
+            animatorImg.SetTrigger("isEndScene");
+            loadingSceneOperation = SceneManager.LoadSceneAsync(scene);
+            loadingSceneOperation.allowSceneActivation = false;
+        }
+        else
+        {
+            SceneManager.LoadScene(scene);
+        }
     }
 
     private void PlaySound(AudioClip clip)

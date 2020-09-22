@@ -301,6 +301,11 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 947538372156160835, guid: 78dc35c224b779340b5711274b0b371c,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
     - target: {fileID: 1650514447365880541, guid: 78dc35c224b779340b5711274b0b371c,
         type: 3}
       propertyPath: m_textInfo.characterCount
