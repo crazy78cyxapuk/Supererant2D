@@ -6034,6 +6034,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d60ca7c3590fce4fb0bf53a7762adfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  autoImg: {fileID: 1824420853580985969, guid: f635a247d7349b94bb3129002799be3a, type: 3}
+  sliderImg: {fileID: -3329362797939266913, guid: 1140976d65104164b961e186ab6e4294,
+    type: 3}
 --- !u!1 &6086440785268672652
 GameObject:
   m_ObjectHideFlags: 0
