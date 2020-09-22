@@ -13,9 +13,10 @@ public class MenuManager : MonoBehaviour
     {
         if (PlayerPrefs.GetFloat("enterInGame") == 0)
         {
-            PlayerPrefs.SetFloat("music", 1);
-            PlayerPrefs.SetFloat("sound", 1);
-            PlayerPrefs.SetString("localization", "en");
+            PlayerPrefs.SetFloat("music", 1); //музыка
+            PlayerPrefs.SetFloat("sound", 1); //звуки
+            PlayerPrefs.SetString("localization", "en"); //локализация
+            PlayerPrefs.SetString("camera", "slider"); //камера в игре //slider/auto
             PlayerPrefs.SetFloat("enterInGame", 10); //обозначаем, что игрок уже заходил в игру
         }
 

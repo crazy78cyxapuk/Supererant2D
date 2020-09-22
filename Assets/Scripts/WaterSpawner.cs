@@ -74,7 +74,11 @@ public class WaterSpawner : MonoBehaviour
             yield return new WaitForSeconds(0.2f);
         }
 
-        EnableCameraFollow();
+        if (PlayerPrefs.GetString("camera") == "auto")
+        {
+            EnableCameraFollow(); 
+        }
+
         EnableSlider();
     }
 }

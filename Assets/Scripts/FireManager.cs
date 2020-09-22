@@ -5,6 +5,7 @@ using UnityEngine;
 public class FireManager : MonoBehaviour
 {
     [SerializeField] private string nameBiome;
+    [SerializeField] public string nameLvl;
 
     [SerializeField] private GameObject GameMain, Finish;
 
@@ -61,6 +62,10 @@ public class FireManager : MonoBehaviour
 
     private void SaveLvl()
     {
-        PlayerPrefs.SetInt(nameBiome, PlayerPrefs.GetInt(nameBiome) + 1);
+        if(PlayerPrefs.GetInt(nameLvl) != 1)
+        {
+            PlayerPrefs.SetInt(nameBiome, PlayerPrefs.GetInt(nameBiome) + 1);
+            PlayerPrefs.SetInt(nameLvl, 1);
+        }
     }
 }

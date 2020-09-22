@@ -53,31 +53,34 @@ public class CameraFollow : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.y > minPositionY && stopPosition == false)
+        if (PlayerPrefs.GetString("camera") == "auto")
         {
-            if (player)
+            if (transform.position.y > minPositionY && stopPosition == false)
             {
-                int currentX = Mathf.RoundToInt(player.position.x);
-                if (currentX > lastX) faceLeft = false; else if (currentX < lastX) faceLeft = true;
-                lastX = Mathf.RoundToInt(player.position.x);
-
-                Vector3 target;
-                if (faceLeft)
+                if (player)
                 {
-                    //target = new Vector3(player.position.x - offset.x, player.position.y + offset.y, transform.position.z);
-                    target = new Vector3(positionCameraX, player.position.y + offset.y, transform.position.z);
-                }
-                else
-                {
-                    //target = new Vector3(player.position.x + offset.x, player.position.y + offset.y, transform.position.z);
-                    target = new Vector3(positionCameraX, player.position.y + offset.y, transform.position.z);
-                }
-                Vector3 currentPosition = Vector3.Lerp(transform.position, target, damping * Time.deltaTime);
-                transform.position = currentPosition;
+                    int currentX = Mathf.RoundToInt(player.position.x);
+                    if (currentX > lastX) faceLeft = false; else if (currentX < lastX) faceLeft = true;
+                    lastX = Mathf.RoundToInt(player.position.x);
 
-                player = GetLowestBall;
+                    Vector3 target;
+                    if (faceLeft)
+                    {
+                        //target = new Vector3(player.position.x - offset.x, player.position.y + offset.y, transform.position.z);
+                        target = new Vector3(positionCameraX, player.position.y + offset.y, transform.position.z);
+                    }
+                    else
+                    {
+                        //target = new Vector3(player.position.x + offset.x, player.position.y + offset.y, transform.position.z);
+                        target = new Vector3(positionCameraX, player.position.y + offset.y, transform.position.z);
+                    }
+                    Vector3 currentPosition = Vector3.Lerp(transform.position, target, damping * Time.deltaTime);
+                    transform.position = currentPosition;
+
+                    player = GetLowestBall;
+                }
             }
-        }        
+        }
     }
 
     public void FindPlayer(bool playerFaceLeft)

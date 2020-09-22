@@ -11,6 +11,7 @@ TagManager:
   - BlueCanopy
   - MusicBackground
   - Sound
+  - Flowers
   layers:
   - Default
   - TransparentFX

@@ -20,6 +20,7 @@ public class WaterController : MonoBehaviour
     private float pushForce = 4f;
 
     private bool isPush = false;
+    private bool isFlowers = false;
 
     private Camera cam;
 
@@ -56,6 +57,18 @@ public class WaterController : MonoBehaviour
         {
             isPush = true;
         }
+
+        if (collision.gameObject.CompareTag("Flowers"))
+        {
+            if (isFlowers == false)
+            {
+                //rb.bodyType = RigidbodyType2D.Static;
+                rb.constraints = RigidbodyConstraints2D.FreezePositionX;
+
+                isFlowers = true;
+                isPush = true;
+            }
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -66,6 +79,13 @@ public class WaterController : MonoBehaviour
             trajectoryRenderer.Hide();
             isPush = false;
         }
+
+        //if (collision.gameObject.CompareTag("Flowers"))
+        //{
+        //    isFlowers = false;
+        //    isPush = false;
+        //    Debug.Log("flowers exit");
+        //}
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -103,10 +123,27 @@ public class WaterController : MonoBehaviour
     {
         if(isPush == true)
         {
+            if (isFlowers)
+            {
+                //rb.bodyType = RigidbodyType2D.Dynamic;
+                rb.constraints = RigidbodyConstraints2D.None;
+                StartCoroutine(SwapIsFlowers());
+            }
+                
             rb.AddForce(force, ForceMode2D.Impulse);
 
             trajectoryRenderer.Hide();
+
+            isPush = false;
+            //isFlowers = false;
+            
         }
+    }
+
+    IEnumerator SwapIsFlowers()
+    {
+        yield return new WaitForSeconds(1f);
+        isFlowers = false;
     }
 
     private void OnMouseDown()

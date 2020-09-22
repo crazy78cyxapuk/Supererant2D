@@ -213,15 +213,15 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: d10
       objectReference: {fileID: 0}
+    - target: {fileID: 3697564203974867310, guid: 78dc35c224b779340b5711274b0b371c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -242.36002
+      objectReference: {fileID: 0}
     - target: {fileID: 3697564204200789985, guid: 78dc35c224b779340b5711274b0b371c,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: d10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3697564204200789985, guid: 78dc35c224b779340b5711274b0b371c,
-        type: 3}
-      propertyPath: m_Interactable
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3697564204824172377, guid: 78dc35c224b779340b5711274b0b371c,
         type: 3}
@@ -1516,6 +1516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameBiome: desert
+  nameLvl: d10
   GameMain: {fileID: 214700156}
   Finish: {fileID: 214700154}
 --- !u!82 &1214108692
