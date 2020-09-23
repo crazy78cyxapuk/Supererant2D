@@ -123,12 +123,6 @@ EditorBuildSettings:
     path: Assets/Scenes/1. forest/f11.unity
     guid: edeb193e85e467d4ea40ced4cca28c42
   - enabled: 1
-    path: Assets/Scenes/1. forest/f12.unity
-    guid: 422405ccf59c71f4ea4802ce745bd4ea
-  - enabled: 1
-    path: Assets/Scenes/1. forest/f13.unity
-    guid: f350932fe3006f34fafd10594db0d4ec
-  - enabled: 1
     path: Assets/Scenes/3. village/v1.unity
     guid: a53a41c50433659479a73c501c19ef43
   - enabled: 1

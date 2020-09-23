@@ -308,6 +308,16 @@ PrefabInstance:
       propertyPath: translateRU.Array.data[5]
       value: "\u043F\u0443\u0441\u0442\u044B\u043D\u043D\u044B\u0439 8"
       objectReference: {fileID: 0}
+    - target: {fileID: 6202773497739597621, guid: 78dc35c224b779340b5711274b0b371c,
+        type: 3}
+      propertyPath: translateEN.Array.data[6]
+      value: desert 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202773497739597621, guid: 78dc35c224b779340b5711274b0b371c,
+        type: 3}
+      propertyPath: translateRU.Array.data[6]
+      value: "\u043F\u0443\u0441\u0442\u044B\u043D\u043D\u044B\u0439 8"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78dc35c224b779340b5711274b0b371c, type: 3}
 --- !u!1 &214700154 stripped

@@ -5,9 +5,11 @@ using UnityEngine.UI;
 
 public class BlockLvl : MonoBehaviour
 {
+    [SerializeField] private string nameCheckLvl;
+
     private void OnEnable()
     {
-        if (PlayerPrefs.GetInt("forest") + PlayerPrefs.GetInt("urban") + PlayerPrefs.GetInt("suburban") + PlayerPrefs.GetInt("village") + PlayerPrefs.GetInt("desert") + PlayerPrefs.GetInt("midtown") == 51)
+        if (PlayerPrefs.GetInt(nameCheckLvl) != 1)
         {
             GetComponent<Button>().interactable = true;
         }

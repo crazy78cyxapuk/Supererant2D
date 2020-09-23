@@ -143,6 +143,16 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: f9
       objectReference: {fileID: 0}
+    - target: {fileID: 3697564203808712437, guid: 78dc35c224b779340b5711274b0b371c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -13.406006
+      objectReference: {fileID: 0}
+    - target: {fileID: 3697564203808712437, guid: 78dc35c224b779340b5711274b0b371c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.000061035156
+      objectReference: {fileID: 0}
     - target: {fileID: 3697564203974867310, guid: 78dc35c224b779340b5711274b0b371c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -218,6 +228,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3697564205426012677, guid: 78dc35c224b779340b5711274b0b371c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.20410156
+      objectReference: {fileID: 0}
     - target: {fileID: 3697564205467036849, guid: 78dc35c224b779340b5711274b0b371c,
         type: 3}
       propertyPath: m_Camera
@@ -236,6 +251,16 @@ PrefabInstance:
     - target: {fileID: 6202773497739597621, guid: 78dc35c224b779340b5711274b0b371c,
         type: 3}
       propertyPath: translateRU.Array.data[5]
+      value: "\u043B\u0435\u0441\u043D\u043E\u0439 9"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202773497739597621, guid: 78dc35c224b779340b5711274b0b371c,
+        type: 3}
+      propertyPath: translateEN.Array.data[6]
+      value: forest 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202773497739597621, guid: 78dc35c224b779340b5711274b0b371c,
+        type: 3}
+      propertyPath: translateRU.Array.data[6]
       value: "\u043B\u0435\u0441\u043D\u043E\u0439 9"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -643,7 +668,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.93, y: 1.5, z: -90}
+  m_LocalPosition: {x: 1.93, y: 2.5, z: -90}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -665,7 +690,7 @@ MonoBehaviour:
   offset: {x: 0, y: 1}
   faceLeft: 1
   player: {fileID: 0}
-  minPositionY: 1.5
+  minPositionY: 2.5
   stopPosition: 0
 --- !u!1001 &638856524
 PrefabInstance:
@@ -2790,7 +2815,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 1ba0090037b98b74f8180b3a09830d0c,
+      objectReference: {fileID: 21300000, guid: 6d6a42cdab6d9e84bacc8f758ead9b4c,
         type: 3}
     - target: {fileID: 786264410655122275, guid: e11330a36260d214bae1050ba08c99b1,
         type: 3}

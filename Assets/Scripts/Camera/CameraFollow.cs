@@ -11,7 +11,7 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private Transform player;
     private int lastX;
 
-    [SerializeField] public float minPositionY = 1.5f;
+    [SerializeField] public float minPositionY = 2.5f;
 
     [HideInInspector] public bool stopPosition = false;
 

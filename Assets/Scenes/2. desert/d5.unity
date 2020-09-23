@@ -318,15 +318,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
-    - target: {fileID: 6202773497739597621, guid: 78dc35c224b779340b5711274b0b371c,
+    - target: {fileID: 6089994672021590512, guid: 78dc35c224b779340b5711274b0b371c,
         type: 3}
-      propertyPath: translateEN.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6202773497739597621, guid: 78dc35c224b779340b5711274b0b371c,
-        type: 3}
-      propertyPath: translateRU.Array.size
-      value: 6
+      propertyPath: m_AnchoredPosition.x
+      value: -167.09995
       objectReference: {fileID: 0}
     - target: {fileID: 6202773497739597621, guid: 78dc35c224b779340b5711274b0b371c,
         type: 3}
@@ -337,6 +332,16 @@ PrefabInstance:
         type: 3}
       propertyPath: translateRU.Array.data[5]
       value: "\u043F\u0443\u0441\u0442\u044B\u043D\u043D\u044B\u0439 5"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202773497739597621, guid: 78dc35c224b779340b5711274b0b371c,
+        type: 3}
+      propertyPath: translateRU.Array.data[6]
+      value: "\u043F\u0443\u0441\u0442\u044B\u043D\u043D\u044B\u0439 5"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202773497739597621, guid: 78dc35c224b779340b5711274b0b371c,
+        type: 3}
+      propertyPath: translateEN.Array.data[6]
+      value: desert 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78dc35c224b779340b5711274b0b371c, type: 3}
