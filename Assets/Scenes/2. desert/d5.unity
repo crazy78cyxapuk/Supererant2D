@@ -321,7 +321,7 @@ PrefabInstance:
     - target: {fileID: 6089994672021590512, guid: 78dc35c224b779340b5711274b0b371c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -167.09995
+      value: -167.09998
       objectReference: {fileID: 0}
     - target: {fileID: 6202773497739597621, guid: 78dc35c224b779340b5711274b0b371c,
         type: 3}
@@ -760,7 +760,7 @@ MonoBehaviour:
   offset: {x: 0, y: 1}
   faceLeft: 1
   player: {fileID: 0}
-  minPositionY: 1.5
+  minPositionY: 3
   stopPosition: 0
 --- !u!1001 &620235660
 PrefabInstance:
@@ -1580,6 +1580,8 @@ MonoBehaviour:
   nameNextLvl: d6
   GameMain: {fileID: 214700156}
   Finish: {fileID: 214700154}
+  isEndBiome: 0
+  endBiomeImg: {fileID: 0}
 --- !u!82 &1214108692
 AudioSource:
   m_ObjectHideFlags: 0

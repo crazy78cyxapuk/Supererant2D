@@ -103,12 +103,12 @@ public class WaterController : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("BlueCanopy"))
-        {
-            force = new Vector2(0, 0);
-            trajectoryRenderer.Hide();
-            isPush = false;
-        }
+        //if (collision.gameObject.CompareTag("BlueCanopy"))
+        //{
+        //    force = new Vector2(0, 0);
+        //    trajectoryRenderer.Hide();
+        //    isPush = false;
+        //}
     }
 
     private void OnMouseDrag()

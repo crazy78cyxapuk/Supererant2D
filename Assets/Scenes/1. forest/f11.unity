@@ -133,6 +133,11 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 1111950445664279516, guid: 78dc35c224b779340b5711274b0b371c,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
     - target: {fileID: 3697564203775132116, guid: 78dc35c224b779340b5711274b0b371c,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
@@ -352,6 +357,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dec8ff8148edd3b40ac86b6025116127, type: 3}
+--- !u!1 &302554517 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 327140054753777567, guid: 78dc35c224b779340b5711274b0b371c,
+    type: 3}
+  m_PrefabInstance: {fileID: 153921345}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &326678123
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1663,6 +1674,8 @@ MonoBehaviour:
   nameNextLvl: d1
   GameMain: {fileID: 153921348}
   Finish: {fileID: 153921346}
+  isEndBiome: 1
+  endBiomeImg: {fileID: 302554517}
 --- !u!82 &1214108692
 AudioSource:
   m_ObjectHideFlags: 0

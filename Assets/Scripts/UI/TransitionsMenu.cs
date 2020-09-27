@@ -30,6 +30,8 @@ public class TransitionsMenu : MonoBehaviour
 
     [SerializeField] private bool isSceneLvl = false;
 
+    [HideInInspector] public string nextScene;
+
 
     private static TransitionsMenu instance;
     public static TransitionsMenu Instance => instance;
@@ -63,9 +65,11 @@ public class TransitionsMenu : MonoBehaviour
         {
             SceneLoadForLoadImage.SetActive(true);
 
+            nextScene = scene;
+
             animatorImg.SetTrigger("isEndScene");
-            loadingSceneOperation = SceneManager.LoadSceneAsync(scene);
-            loadingSceneOperation.allowSceneActivation = false;
+            //loadingSceneOperation = SceneManager.LoadSceneAsync(scene);
+            //loadingSceneOperation.allowSceneActivation = false;
         }
         else
         {

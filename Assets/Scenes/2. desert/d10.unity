@@ -213,6 +213,11 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 1111950445664279516, guid: 78dc35c224b779340b5711274b0b371c,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
     - target: {fileID: 1915163462772884598, guid: 78dc35c224b779340b5711274b0b371c,
         type: 3}
       propertyPath: m_fontSize
@@ -256,7 +261,7 @@ PrefabInstance:
     - target: {fileID: 3697564204200789985, guid: 78dc35c224b779340b5711274b0b371c,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: d10
+      value: v1
       objectReference: {fileID: 0}
     - target: {fileID: 3697564204824172377, guid: 78dc35c224b779340b5711274b0b371c,
         type: 3}
@@ -410,6 +415,12 @@ GameObject:
 --- !u!1 &214700156 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3697564205204974750, guid: 78dc35c224b779340b5711274b0b371c,
+    type: 3}
+  m_PrefabInstance: {fileID: 214700153}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &214700157 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 327140054753777567, guid: 78dc35c224b779340b5711274b0b371c,
     type: 3}
   m_PrefabInstance: {fileID: 214700153}
   m_PrefabAsset: {fileID: 0}
@@ -869,7 +880,7 @@ MonoBehaviour:
   offset: {x: 0, y: 1}
   faceLeft: 1
   player: {fileID: 0}
-  minPositionY: 1.5
+  minPositionY: 3
   stopPosition: 0
 --- !u!1001 &620235660
 PrefabInstance:
@@ -1605,6 +1616,8 @@ MonoBehaviour:
   nameNextLvl: v1
   GameMain: {fileID: 214700156}
   Finish: {fileID: 214700154}
+  isEndBiome: 1
+  endBiomeImg: {fileID: 214700157}
 --- !u!82 &1214108692
 AudioSource:
   m_ObjectHideFlags: 0

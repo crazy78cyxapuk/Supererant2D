@@ -860,7 +860,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.66, y: 1.5, z: -90}
+  m_LocalPosition: {x: 1.66, y: 5, z: -90}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -882,7 +882,7 @@ MonoBehaviour:
   offset: {x: 0, y: 1}
   faceLeft: 1
   player: {fileID: 0}
-  minPositionY: 1.5
+  minPositionY: 5
   stopPosition: 0
 --- !u!1001 &560459608
 PrefabInstance:
@@ -1642,6 +1642,8 @@ MonoBehaviour:
   nameNextLvl: v4
   GameMain: {fileID: 318637976}
   Finish: {fileID: 318637974}
+  isEndBiome: 0
+  endBiomeImg: {fileID: 0}
 --- !u!82 &1214108692
 AudioSource:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FireManager : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class FireManager : MonoBehaviour
     [SerializeField] private string nameNextLvl;
 
     [SerializeField] private GameObject GameMain, Finish;
+
+    [SerializeField] private bool isEndBiome = false;
+    [SerializeField] private GameObject endBiomeImg;
 
     //private int countFires;
     private List<GameObject> fires = new List<GameObject>();
@@ -53,7 +57,30 @@ public class FireManager : MonoBehaviour
         SaveLvl();
         GameMain.SetActive(false);
 
-        if(PlayerPrefs.GetString("transitions") == "auto")
+        if (isEndBiome)
+        {
+            StartCoroutine(ShowEndBiome());
+        }
+        else
+        {
+            if (PlayerPrefs.GetString("transitions") == "auto")
+            {
+                TransitionsMenu.Instance.TransitionScene(nameNextLvl);
+            }
+            else
+            {
+                Finish.SetActive(true);
+            }
+        }
+    }
+
+    IEnumerator ShowEndBiome()
+    {
+        endBiomeImg.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        endBiomeImg.SetActive(false);
+
+        if (PlayerPrefs.GetString("transitions") == "auto")
         {
             TransitionsMenu.Instance.TransitionScene(nameNextLvl);
         }

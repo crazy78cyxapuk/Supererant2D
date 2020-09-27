@@ -11,7 +11,7 @@ public class BlockLvl : MonoBehaviour
     {
         if (PlayerPrefs.GetInt(nameCheckLvl) != 1)
         {
-            GetComponent<Button>().interactable = true;
+            GetComponent<Button>().interactable = false;
         }
     }
 }

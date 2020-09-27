@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class OnAnimationOver : MonoBehaviour
@@ -9,7 +10,8 @@ public class OnAnimationOver : MonoBehaviour
 
     public void ContinuedLoadScene() 
     {
-        TransitionsMenu.Instance.loadingSceneOperation.allowSceneActivation = true;
+        SceneManager.LoadScene(TransitionsMenu.Instance.nextScene);
+        //TransitionsMenu.Instance.loadingSceneOperation.allowSceneActivation = true;
     }
 
     public void HideImage()

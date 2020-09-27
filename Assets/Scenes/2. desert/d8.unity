@@ -666,7 +666,7 @@ MonoBehaviour:
   offset: {x: 0, y: 1}
   faceLeft: 1
   player: {fileID: 0}
-  minPositionY: 1.5
+  minPositionY: 3
   stopPosition: 0
 --- !u!1001 &620235660
 PrefabInstance:
@@ -1333,6 +1333,8 @@ MonoBehaviour:
   nameNextLvl: d9
   GameMain: {fileID: 214700156}
   Finish: {fileID: 214700154}
+  isEndBiome: 0
+  endBiomeImg: {fileID: 0}
 --- !u!82 &1214108692
 AudioSource:
   m_ObjectHideFlags: 0

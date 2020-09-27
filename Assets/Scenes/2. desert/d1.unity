@@ -280,17 +280,17 @@ PrefabInstance:
     - target: {fileID: 1915163462772884598, guid: 78dc35c224b779340b5711274b0b371c,
         type: 3}
       propertyPath: m_fontSize
-      value: 18
+      value: 72
       objectReference: {fileID: 0}
     - target: {fileID: 1915163462772884598, guid: 78dc35c224b779340b5711274b0b371c,
         type: 3}
       propertyPath: m_firstOverflowCharacterIndex
-      value: 4
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 1915163462772884598, guid: 78dc35c224b779340b5711274b0b371c,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2588664203751378816, guid: 78dc35c224b779340b5711274b0b371c,
         type: 3}
@@ -755,7 +755,7 @@ MonoBehaviour:
   offset: {x: 0, y: 1}
   faceLeft: 1
   player: {fileID: 0}
-  minPositionY: 1.5
+  minPositionY: 3
   stopPosition: 0
 --- !u!1001 &620235660
 PrefabInstance:
@@ -1491,6 +1491,8 @@ MonoBehaviour:
   nameNextLvl: d2
   GameMain: {fileID: 214700156}
   Finish: {fileID: 214700154}
+  isEndBiome: 0
+  endBiomeImg: {fileID: 0}
 --- !u!82 &1214108692
 AudioSource:
   m_ObjectHideFlags: 0
