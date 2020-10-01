@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class FireManager : MonoBehaviour
 {
@@ -50,7 +51,7 @@ public class FireManager : MonoBehaviour
         }
     }
 
-    private void EnableFinishScreen()
+    public void EnableFinishScreen()
     {
         PlaySound();
 
@@ -60,9 +61,15 @@ public class FireManager : MonoBehaviour
         if (isEndBiome)
         {
             StartCoroutine(ShowEndBiome());
+
+            //Ads.Instance.RequestRewardAd();
+            Ads.Instance.IEShowNonSkippable();
         }
         else
         {
+            //Ads.Instance.ShowInterstitial();
+            Ads.Instance.ShowInterstitial();
+
             if (PlayerPrefs.GetString("transitions") == "auto")
             {
                 TransitionsMenu.Instance.TransitionScene(nameNextLvl);
@@ -72,6 +79,13 @@ public class FireManager : MonoBehaviour
                 Finish.SetActive(true);
             }
         }
+    }
+
+    public void RestartLevel()
+    {
+        PlaySound();
+
+        SceneManager.LoadScene(nameLvl);
     }
 
     IEnumerator ShowEndBiome()

@@ -10315,6 +10315,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicObj: {fileID: 1211766287944713017, guid: 4ee3536deb9db9746a260a5593d5840d,
     type: 3}
+  adsObject: {fileID: 2535814232123079146, guid: 722036d952a2e654caaffee01afa4993,
+    type: 3}
 --- !u!114 &784658282
 MonoBehaviour:
   m_ObjectHideFlags: 0

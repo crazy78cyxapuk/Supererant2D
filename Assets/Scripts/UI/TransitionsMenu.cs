@@ -68,11 +68,12 @@ public class TransitionsMenu : MonoBehaviour
             nextScene = scene;
 
             animatorImg.SetTrigger("isEndScene");
-            //loadingSceneOperation = SceneManager.LoadSceneAsync(scene);
-            //loadingSceneOperation.allowSceneActivation = false;
         }
         else
         {
+            //Ads.Instance.DespawnBanner();
+            Ads.Instance.HideBanner();
+
             SceneManager.LoadScene(scene);
         }
     }
@@ -264,6 +265,12 @@ public class TransitionsMenu : MonoBehaviour
         yield return new WaitForSeconds(1.6f);
         AllSettingsScreen.SetActive(false);
         settingsBtn.SetActive(true);
+    }
+
+    public void ShowReward()
+    {
+        //Ads.Instance.ShowRewardAd();
+        Ads.Instance.StartCoroutine("IEShowNonSkippable");
     }
 
     #endregion

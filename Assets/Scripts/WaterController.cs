@@ -99,6 +99,11 @@ public class WaterController : MonoBehaviour
         {
             isPush = true;
         }
+
+        if (collision.gameObject.CompareTag("Restart"))
+        {
+            //когда все шарики будут входить, то делать рестарт
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)

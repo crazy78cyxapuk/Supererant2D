@@ -9,6 +9,8 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject musicObj;
     //[SerializeField] private GameObject soundObj;
 
+    [SerializeField] private GameObject adsObject;
+
     private void Awake()
     {
         if (PlayerPrefs.GetFloat("enterInGame") != 10)
@@ -22,6 +24,10 @@ public class MenuManager : MonoBehaviour
         }
 
         InitVolumeMusic();
+
+        //InitAds();
+
+        //Ads.Instance.ShowBanner();
     }
 
     private void InitVolumeMusic()
@@ -35,15 +41,16 @@ public class MenuManager : MonoBehaviour
             music.volume = PlayerPrefs.GetFloat("music");
             DontDestroyOnLoad(obj);
         }
+    }
 
-        //obj = GameObject.FindGameObjectWithTag("Sound");
+    private void InitAds()
+    {
+        GameObject obj = GameObject.FindGameObjectWithTag("Ads");
 
-        //if(obj == null)
-        //{
-        //    obj = Instantiate(soundObj);
-        //    music = obj.GetComponent<AudioSource>();
-        //    music.volume = PlayerPrefs.GetFloat("sound");
-        //    DontDestroyOnLoad(obj);
-        //}
+        if (obj == null)
+        {
+            obj = Instantiate(adsObject);
+            DontDestroyOnLoad(obj);
+        }
     }
 }

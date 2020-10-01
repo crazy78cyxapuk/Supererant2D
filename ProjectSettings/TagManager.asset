@@ -12,6 +12,8 @@ TagManager:
   - MusicBackground
   - Sound
   - Flowers
+  - Ads
+  - Restart
   layers:
   - Default
   - TransparentFX
