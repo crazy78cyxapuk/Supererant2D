@@ -269,8 +269,7 @@ public class TransitionsMenu : MonoBehaviour
 
     public void ShowReward()
     {
-        //Ads.Instance.ShowRewardAd();
-        Ads.Instance.StartCoroutine("IEShowNonSkippable");
+        Ads.Instance.ShowReward();
     }
 
     #endregion

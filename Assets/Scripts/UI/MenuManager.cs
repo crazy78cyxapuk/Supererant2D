@@ -7,7 +7,6 @@ public class MenuManager : MonoBehaviour
     private AudioSource music;
 
     [SerializeField] private GameObject musicObj;
-    //[SerializeField] private GameObject soundObj;
 
     [SerializeField] private GameObject adsObject;
 

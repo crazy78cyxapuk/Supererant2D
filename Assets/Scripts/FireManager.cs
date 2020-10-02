@@ -60,14 +60,13 @@ public class FireManager : MonoBehaviour
 
         if (isEndBiome)
         {
-            StartCoroutine(ShowEndBiome());
+            Ads.Instance.ShowReward();
 
-            //Ads.Instance.RequestRewardAd();
-            Ads.Instance.IEShowNonSkippable();
+            StartCoroutine(ShowEndBiome());
+            
         }
         else
         {
-            //Ads.Instance.ShowInterstitial();
             Ads.Instance.ShowInterstitial();
 
             if (PlayerPrefs.GetString("transitions") == "auto")
