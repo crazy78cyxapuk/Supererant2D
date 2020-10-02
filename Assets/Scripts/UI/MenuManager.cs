@@ -24,9 +24,7 @@ public class MenuManager : MonoBehaviour
 
         InitVolumeMusic();
 
-        //InitAds();
-
-        //Ads.Instance.ShowBanner();
+        InitAds();
     }
 
     private void InitVolumeMusic()
@@ -51,5 +49,7 @@ public class MenuManager : MonoBehaviour
             obj = Instantiate(adsObject);
             DontDestroyOnLoad(obj);
         }
+
+        Ads.Instance.ShowBanner();
     }
 }

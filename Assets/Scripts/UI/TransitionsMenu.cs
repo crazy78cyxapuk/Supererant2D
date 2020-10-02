@@ -239,6 +239,11 @@ public class TransitionsMenu : MonoBehaviour
         LevelsScreen.SetActive(false);
     }
 
+    public void LoadURL(string path)
+    {
+        Application.OpenURL(path);
+    }
+
     #endregion
 
     #region Buttons in game

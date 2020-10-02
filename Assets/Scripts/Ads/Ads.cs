@@ -26,8 +26,6 @@ public class Ads : MonoBehaviour
 
     #endregion
 
-    [SerializeField] private Text txt; 
-
     private string appKey = "ca-app-pub-5922323158220499~7700909397";
 
     private BannerView bannerView;
@@ -42,8 +40,8 @@ public class Ads : MonoBehaviour
     {
         MobileAds.Initialize(appKey);
 
-        LoadInterstitial();
-        LoadReward();
+        //LoadInterstitial();
+        //LoadReward();
     }
 
     #region Appodeal
@@ -184,7 +182,7 @@ public class Ads : MonoBehaviour
         bannerView.Destroy();
     }
 
-    public void LoadInterstitial()
+    public void ShowInterstitial()
     {
         interstitial = new InterstitialAd(idInterstitial);
 
@@ -201,15 +199,15 @@ public class Ads : MonoBehaviour
         interstitial.OnAdClosed -= HandleOnAdClosed;
     }
 
-    public void ShowInterstitial()
-    {
-        if (interstitial.IsLoaded())
-        {
-            interstitial.Show();
-        }
-    }
+    //public void ShowInterstitial()
+    //{
+    //    if (interstitial.IsLoaded())
+    //    {
+    //        interstitial.Show();
+    //    }
+    //}
 
-    public void LoadReward()
+    public void ShowReward()
     {
         rewarded = new RewardedAd(idReward);
 
@@ -223,9 +221,6 @@ public class Ads : MonoBehaviour
 
     public void HandleRewardedAdFailedToShow(object sender, AdErrorEventArgs args)
     {
-
-        txt.text = "HandleRewardedAdFailedToShow event received with message: " + args.Message;
-
         rewarded.OnUserEarnedReward -= HandleUserEarnedReward;
         rewarded.OnAdFailedToShow -= HandleRewardedAdFailedToShow;
         rewarded.OnAdFailedToLoad -= HandleRewardedAdFailedToLoad;
@@ -233,20 +228,18 @@ public class Ads : MonoBehaviour
 
     public void HandleRewardedAdFailedToLoad(object sender, AdErrorEventArgs args)
     {
-        txt.text = "HandleRewardedAdFailedToLoad event received with message: " + args.Message;
-
         rewarded.OnUserEarnedReward -= HandleUserEarnedReward;
         rewarded.OnAdFailedToShow -= HandleRewardedAdFailedToShow;
         rewarded.OnAdFailedToLoad -= HandleRewardedAdFailedToLoad;
     }
 
-    public void ShowReward()
-    {
-        if (rewarded.IsLoaded())
-        {
-            rewarded.Show();
-        }
-    }
+    //public void ShowReward()
+    //{
+    //    if (rewarded.IsLoaded())
+    //    {
+    //        rewarded.Show();
+    //    }
+    //}
 
     public void HandleUserEarnedReward(object sender, Reward args)
     {

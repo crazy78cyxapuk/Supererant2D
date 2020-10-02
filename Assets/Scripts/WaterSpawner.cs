@@ -14,6 +14,7 @@ public class WaterSpawner : MonoBehaviour
     [SerializeField] private GameObject slider;
 
     private int countWaters;
+    private int countWatersForRestart;
 
     private ManagerPool managerPool = new ManagerPool();
 
@@ -54,6 +55,7 @@ public class WaterSpawner : MonoBehaviour
     private void Spawn()
     {
         countWaters = Random.Range(5, 16);
+        countWatersForRestart = countWaters;
 
         StartCoroutine(SpawnWaitForSec());
     }
@@ -107,6 +109,24 @@ public class WaterSpawner : MonoBehaviour
             objs[objs.Count - 1].transform.position = new Vector3(objs[objs.Count - 1].transform.position.x, objs[objs.Count - 1].transform.position.y, -10f);
 
             yield return new WaitForSeconds(0.2f);
+        }
+    }
+
+    public void Restart(GameObject obj)
+    {
+        //countWatersForRestart--;
+
+        //if (countWatersForRestart <= 0)
+        //{
+        //    TransitionsMenu.Instance.TransitionScene(FireManager.Instance.nameLvl);
+        //}
+
+        managerPool.Despawn(PoolType.Entities, obj);
+        objs.Remove(obj);
+
+        if (objs.Count <= 0)
+        {
+            TransitionsMenu.Instance.TransitionScene(FireManager.Instance.nameLvl);
         }
     }
 }

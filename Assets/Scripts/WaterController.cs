@@ -102,7 +102,7 @@ public class WaterController : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Restart"))
         {
-            //когда все шарики будут входить, то делать рестарт
+            WaterSpawner.Instance.Restart(gameObject);
         }
     }
 
