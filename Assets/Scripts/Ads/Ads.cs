@@ -174,7 +174,11 @@ public class Ads : MonoBehaviour
 
     public void ShowBanner()
     {
+        string idBannerTest = "ca-app-pub-3940256099942544/6300978111";
         bannerView = new BannerView(idBanner, AdSize.Banner, AdPosition.Bottom);
+
+        AdRequest request = new AdRequest.Builder().Build();
+        bannerView.LoadAd(request);
     }
 
     public void HideBanner()
@@ -184,9 +188,11 @@ public class Ads : MonoBehaviour
 
     public void ShowInterstitial()
     {
+        string idIntTest = "ca-app-pub-3940256099942544/1033173712";
         interstitial = new InterstitialAd(idInterstitial);
 
         interstitial.OnAdClosed += HandleOnAdClosed;
+        interstitial.OnAdLoaded += HandleOnAdLoaded;
 
         AdRequest request = new AdRequest.Builder().Build();
         interstitial.LoadAd(request);
@@ -197,6 +203,15 @@ public class Ads : MonoBehaviour
         interstitial.Destroy();
 
         interstitial.OnAdClosed -= HandleOnAdClosed;
+        interstitial.OnAdLoaded -= HandleOnAdLoaded;
+    }
+
+    public void HandleOnAdLoaded(object sender, EventArgs args)
+    {
+        interstitial.Show();
+
+        interstitial.OnAdClosed -= HandleOnAdClosed;
+        interstitial.OnAdLoaded -= HandleOnAdLoaded;
     }
 
     //public void ShowInterstitial()
@@ -209,14 +224,26 @@ public class Ads : MonoBehaviour
 
     public void ShowReward()
     {
+        string idRewardTest = "ca-app-pub-3940256099942544/5224354917";
         rewarded = new RewardedAd(idReward);
 
         rewarded.OnUserEarnedReward += HandleUserEarnedReward;
         rewarded.OnAdFailedToShow += HandleRewardedAdFailedToShow;
         rewarded.OnAdFailedToLoad += HandleRewardedAdFailedToLoad;
+        rewarded.OnAdLoaded += HandleRewardedAdLoaded;
 
         AdRequest request = new AdRequest.Builder().Build();
         rewarded.LoadAd(request);
+    }
+
+    public void HandleRewardedAdLoaded(object sender, EventArgs args)
+    {
+        rewarded.Show();
+
+        rewarded.OnUserEarnedReward -= HandleUserEarnedReward;
+        rewarded.OnAdFailedToShow -= HandleRewardedAdFailedToShow;
+        rewarded.OnAdFailedToLoad -= HandleRewardedAdFailedToLoad;
+        rewarded.OnAdLoaded -= HandleRewardedAdLoaded;
     }
 
     public void HandleRewardedAdFailedToShow(object sender, AdErrorEventArgs args)
@@ -224,6 +251,7 @@ public class Ads : MonoBehaviour
         rewarded.OnUserEarnedReward -= HandleUserEarnedReward;
         rewarded.OnAdFailedToShow -= HandleRewardedAdFailedToShow;
         rewarded.OnAdFailedToLoad -= HandleRewardedAdFailedToLoad;
+        rewarded.OnAdLoaded -= HandleRewardedAdLoaded;
     }
 
     public void HandleRewardedAdFailedToLoad(object sender, AdErrorEventArgs args)
@@ -231,6 +259,7 @@ public class Ads : MonoBehaviour
         rewarded.OnUserEarnedReward -= HandleUserEarnedReward;
         rewarded.OnAdFailedToShow -= HandleRewardedAdFailedToShow;
         rewarded.OnAdFailedToLoad -= HandleRewardedAdFailedToLoad;
+        rewarded.OnAdLoaded -= HandleRewardedAdLoaded;
     }
 
     //public void ShowReward()
@@ -248,6 +277,7 @@ public class Ads : MonoBehaviour
         rewarded.OnUserEarnedReward -= HandleUserEarnedReward;
         rewarded.OnAdFailedToShow -= HandleRewardedAdFailedToShow;
         rewarded.OnAdFailedToLoad -= HandleRewardedAdFailedToLoad;
+        rewarded.OnAdLoaded -= HandleRewardedAdLoaded;
     }
 
 }

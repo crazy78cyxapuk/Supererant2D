@@ -29,6 +29,8 @@ public class MenuManager : MonoBehaviour
         else
         {
             TitleScreen.SetActive(true);
+
+            InitAds();
         }
 
         InitVolumeMusic();
